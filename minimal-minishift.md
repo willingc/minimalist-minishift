@@ -4,7 +4,7 @@
 
 [Detail from official docs](https://docs.openshift.org/latest/minishift/getting-started/installing.html)
 
-Install a hypervisor, `xhyve`:
+**Install a hypervisor, `xhyve`:**
 
 ```bash
 brew install docker-machine-driver-xhyve
@@ -12,7 +12,7 @@ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docke
 sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
 
-Install minishift stable:
+**Install minishift (stable version):**
 
 ```bash
 brew cask install minishift  # use --force if upgrading
@@ -20,7 +20,7 @@ brew cask install minishift  # use --force if upgrading
 
 ## Launching minishift
 
-*Command*
+**Command**
 
 ```bash
 minishift start
@@ -51,7 +51,7 @@ To login as administrator:
 
 ## Configure minishift for your development Mac
 
-*Command*
+**Command**
 
 ```bash
 minishift oc-env
@@ -65,10 +65,9 @@ export PATH="/Users/willingc/.minishift/cache/oc/v3.7.1/darwin:$PATH"
 # eval $(minishift oc-env)
 ```
 
-*Command*
+**Command**
 
 ```bash
-export PATH="/Users/willingc/.minishift/cache/oc/v3.7.1/darwin:$PATH"
 eval $(minishift oc-env)
 echo $PATH
 ```
@@ -76,7 +75,6 @@ echo $PATH
 *Response*
 
 ```bash
-# Nothing displayed for `export PATH...`
 # Nothing displayed for `eval $(minishift oc-env)`
 /Users/willingc/.minishift/cache/oc/v3.7.1/darwin:/Library/Frameworks/Python.framework/Versions/3  ... :/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin
 # Your $PATH's output will differ.
@@ -84,10 +82,5 @@ echo $PATH
 
 ## minishift commands
 
-
 - `minishift ip`: get IP address of cluster
 - `minishift oc-env`: display command to update PATH to the openshift command line interface, `oc`
-
-## Creating a new app
-
-TODO
