@@ -33,7 +33,9 @@ minishift start
 -- Checking if requested OpenShift version 'v3.7.1' is valid ... OK
 -- Checking if requested OpenShift version 'v3.7.1' is supported ... OK
 -- Checking if requested hypervisor 'xhyve' is supported on this platform ... OK
+
 ...
+
 OpenShift server started.
 
 The server is accessible via web console at:
@@ -82,5 +84,9 @@ echo $PATH
 
 ## minishift commands
 
-- `minishift ip`: get IP address of cluster
-- `minishift oc-env`: display command to update PATH to the openshift command line interface, `oc`
+| Command        | Description |
+|----------------|-------------|
+| `minishift start` | start the minishift cluster |
+| `minishift ip` | get IP address of cluster |
+| `minishift oc-env` | display command to update PATH to the openshift command line interface, `oc` |
+| `minishift stop` | stop the minishift cluster |
